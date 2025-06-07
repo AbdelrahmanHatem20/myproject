@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>User Manager</title>
+<link rel="stylesheet" href="file.CSS">
+</head>
+<body>
+
+<h1>Users</h1>
+
+<section>
+<button onclick="addUser()">Add User</button>
+
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Email</th>
+<th>Phone</th>
+<th>Actions</th>
+</tr>
+</thead>
+<tbody id="contentTableBody"></tbody>
+</table>
+</section>
+
+<div id="userForm" style="display: none; flex-direction: column;">
+<h2 id="formTitle">User</h2>
+
+<input type="hidden" id="userId">
+<input id="name" placeholder="Name">
+<input id="email" placeholder="Email">
+<input id="phone" placeholder="Phone">
+
+<div>
+<button onclick="saveUser()">Save</button>
+<button onclick="hideForm()">Cancel</button>
+</div>
+</div>
+
+<script src="form.js"></script>
+<script src="file.js"></script>
+</body>
+</html>
